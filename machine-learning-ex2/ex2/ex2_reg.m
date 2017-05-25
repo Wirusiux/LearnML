@@ -75,7 +75,7 @@ fprintf('Expected gradients (approx) - first five values only:\n');
 fprintf(' 0.0085\n 0.0188\n 0.0001\n 0.0503\n 0.0115\n');
 
 fprintf('\nProgram paused. Press enter to continue.\n');
-pause;
+%pause;
 
 % Compute and display cost and gradient
 % with all-ones theta and lambda = 10
@@ -107,7 +107,7 @@ pause;
 initial_theta = zeros(size(X, 2), 1);
 
 % Set regularization parameter lambda to 1 (you should vary this)
-lambda = 1;
+lambda = 100;
 
 % Set Options
 options = optimset('GradObj', 'on', 'MaxIter', 400);
